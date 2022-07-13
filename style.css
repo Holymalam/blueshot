@@ -1,79 +1,265 @@
-
-/* default settings */
+/* Default setting */
 body{
     box-sizing: border-box;
-    margin: 0;
-    height: 100%;
+    margin: 0px;
+    height: 100vh;/* vh=view height */
 }
 
+/* * is a css selector that selects all the elements in html */
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
-
-/* end of defult settings */
+/* End of default setting */ 
 
 .nav-bar{
     display: flex;
     justify-content: space-between;
+    background: #ffffff;
     height: 9vh;
     align-items: center;
-    padding-inline: 1rem;
-    padding-top: 0.1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    /* A rem ia a relative value that is relative to the front size of the html document u are working on. 1ram=16px; which is the normal px of the web browser. */
 }
 
 .logo{
     width: 20%;
-}
-
-.hero-wraper{
-    width: 89%;
-    margin: 0 auto;
+    
 }
 
 .hero{
-    background-color: rgb(137, 214, 240);
-}.hero-wraper > h1{
-    letter-spacing: 2px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #ccedff;
+   /*  #d5f4ff; */
+}
+
+
+.hero-wrap{
+    width: 89%;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+}
+
+.hero-wrap > h1{
+    letter-spacing: 4px;
+    font-family: proxima-nova,sans-serif;
     font-weight: 400;
-    font-size: 0.8rem;
-    padding: 1.7rem 0;
-    color: slategrey;
+    font-size: 0.6rem;
+    padding: 2.1rem 0;
+    text-color: #1d2a3b;
 }
 
-.hero-wraper > h2{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 900;
-    font-size: 2.5rem;
-    line-height: 1.1;
-    padding-bottom: 2rem;
-    color: rgb(22, 10, 10);
-}
-
-
-.hero-wraper > p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.hero-wrap > h2{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 5.8rem;
     line-height: 1;
+    padding-bottom: 2rem;
+    text-color: #1d2a3b;
+}
+
+.hero-wrap > p{
+    font-family: proxima-nova,sans-serif;
     font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    text-color: #1d2a3b;
+    margin-bottom: 2rem;
+}
+     
+.hero-wrap > button{
+    color: white;
+    padding: 2.5rem;
+    background: #2c76dc;
+    font-size: 2.8rem;
+    font-weight: 500;
+    border: 0px;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+}    
+
+.hero-image{
+     width: 100%;
+    overflow: hidden;
+    object-fit: contain;
+} 
+
+/* WriteUps1 */
+.writeups1 > h2{
+    font-weight: 550;
+    font-size: 3rem;
+    margin-top: 2.5rem;
+    padding-left: 1.7rem;
+    padding-right: 0.2rem;
+    text-color: #1d2a3b;
+}
+
+.writeups1 > p{
     font-size: 1rem;
-    color: rgb(24, 10, 10);
+    padding-left: 1.7rem;
+    padding-right: 0.2rem;
+    text-color: #1d2a3b;
+    margin-bottom: 3rem;
+}
+
+.hostingplans{
+    padding-left: 2.7rem;
+    margin-bottom: 2.3rem;
+}
+
+/* WriteUps2 */
+.writeups2 > h2{
+    padding-left: 1.7rem;
+    text-color: #1d2a3b;
+}  
+ 
+.writeups2 > p{
+    font-size: 1rem;
+    padding-left: 1.7rem;
+    padding-right: 0.2rem;
+    text-color: #1d2a3b;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+/* WriteUps3*/
+.writeups3 > h2{
+    padding-left: 1.7rem;
+    text-color: #1d2a3b;
+}  
+ 
+.writeups3 > p{
+    font-size: 1rem;
+    padding-left: 1.7rem;
+    padding-right: 0.2rem;
+    text-color: #1d2a3b;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
+/* WriteUps4 */
+.writeups4 > h2{
+    padding-left: 1.5rem;
+    text-color: #1d2a3b;
+}  
+ 
+.writeups4 > p{
+    font-size: 1rem;
+    padding-left: 1.7rem;
+    padding-right: 0.2rem;
+    text-color: #1d2a3b;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* chooseWordPress */
+.chooseWordPress > h2{
+    text-weight: 500rem;
+    text-align: center;
+    font-size: 6rem;
+    text-color: #1d2a3b;
+}
+
+.chooseWordPress > p{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+/* Container */
+.container{
+    background: #ccedff;
+    padding-bottom: 8rem;
+}
+
+.ladyonlaptop{
+    overflow: hidden;
+    object-fit: contain;
+}
+
+/* resources */
+ .resources{
+    margin: auto;
+    overflow: hidden;
+    
+} 
+
+.resources >h1{
+    letter-spacing: 4px;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 400;
+    font-size: 0.6rem;
+    padding-left: 1.5rem;
+    text-color: #1d2a3b;
+}
+
+.resources >h2{
+    font-family: ;
+    font-weight: bolder;
+    font-size: 5rem;
+    padding-left: 1.7rem;
+    text-color: #1d2a3b;
+}
+
+.resources >h4{
+    font-family: Georgia,serif;
+    font-weight: 800;
+    font-size: 1.31rem;
+    padding-left: 1.7rem;
+    text-color: #1d2a3b;
+}
+
+.resources > p{
+     width: 90%;
+    font-family: Georgia,serif;
+    padding-left: 1.7rem;
+    color: #2c76dc;
+    font-size: 0.98rem;
+}
+
+/* ending */
+.ending{
+    background: #019fff;
+    padding-top: 8rem;
+}
+
+.writeups >h1{
+    letter-spacing: 2px;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 360;
+    font-size: 0.9rem;
+    padding-left: 1.7rem;
+    text-color: #1d2a3b;   
+}
+
+.writeups >h2{
+    text-color: #1d2a3b;   
+    padding-left: 1.7rem;
+    font-size: 5rem;
+    font-family: Georgia,serif;
+    margin-bottom: 2rem;
+}
+
+.writeups >h3{
+    font-size: 2rem;
+    padding-left: 1.7rem;
+    font-family: Georgia,serif;
     margin-bottom: 1.5rem;
 }
 
-.hero-wraper > button{
-    color: white;
-    padding: 1.1rem;
-    background-color: rgba(54, 54, 248, 0.815);
-    font-size: 1rem;
-    font-weight: 100;
-    border: 0px;
-    border-radius: 2px;
-    margin-bottom: 1.8rem;
+.writeups >p{
+    padding-left: 1.7rem;
+    font-size: 0.9rem;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 380;
 }
 
-.hero-image{
-    width: 100%;
-    overflow: hidden;
+.sg{
+    overflow: hidden; 
+    margin: 0;
     object-fit: contain;
+    padding: 0.8rem;
 }
